@@ -1,3 +1,4 @@
+// 数组降维
 // 数组去重
 // url参数转对象
 // 对象转成url参数
@@ -17,6 +18,10 @@
 // 获取浏览器类型和版本
 // 获取操作系统类型
 // 浏览器复制
+
+//多维数组降级一维
+function flatten(arr) { return [].concat( ...arr.map(x => Array.isArray(x) ? flatten(x) : x) ) }
+
 /**
  * @description 重复数组去重
  * @param arr
@@ -356,3 +361,9 @@ copyData(value) {
     })
 }
 复制代码
+
+
+
+
+
+
